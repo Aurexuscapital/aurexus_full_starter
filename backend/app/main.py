@@ -1,3 +1,4 @@
+from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import api_router
@@ -30,7 +31,7 @@ async def health():
 app.include_router(api_router)
 
 # app/app/main.py
-from __future__ import annotations
+
 from fastapi import FastAPI
 from app.app.routers.ai import router as ai_router
 
@@ -42,4 +43,5 @@ app.include_router(ai_router)
 def health():
     return {"ok": True}
 
-
+from app.api.ai import router as ai_router
+app.include_router(ai_router, prefix="/api")
