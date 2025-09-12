@@ -8,7 +8,7 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "@next_public_api_url",
+    "NEXT_PUBLIC_API_URL": "http://localhost:8000",
     "NEXT_PUBLIC_APP_NAME": "Aurexus",
     "NEXT_PUBLIC_APP_DESCRIPTION": "AI-powered insights for real estate macro trends, suburb analytics, and investment strategies"
   },
